@@ -1,0 +1,30 @@
+.container {
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    margin-bottom: 4rem;
+}
+.infoContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+}
+.infoContainer span {
+    opacity: .8;
+    font-style: italic;
+    position: relative;
+}
+.infoContainer span:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -3px;
+
+}
+.infoContainer span:not(:last-child) {
+    padding-right: 1rem;
+    margin-right: 1rem;
+}
